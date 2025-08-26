@@ -1,0 +1,350 @@
+/*Estilos generales y configuración base (reset, tipografías, etc)*/
+/*Reseteamos los estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", serif;
+    line-height: 1.6;
+    color: #f4f4f9;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Neoneon', monospace;
+    font-size: 150px;
+    font-weight: 100;
+    color: #f4f4f9;
+}
+
+h2 {
+    font-family: "Staatliches", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    color: #f4f4f9;
+    text-align: center;
+}
+
+h3, h4{
+    font-family: "Staatliches", monospace;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0;
+    color: #f652a0;
+}
+
+p {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Estilo del menu principal*/
+header {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 50px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 2%;
+    width: 80%;
+}
+
+header a img {
+    width: 60px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li {
+    white-space: nowrap;
+}
+
+nav ul li a {
+    font-family: "Lato", serif;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 15px;
+    display: inline-block;
+}
+
+.navlist li a{
+    display: flex;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist li a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 760px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/*Estilo del body*/
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr  1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+/*Estilo del header*/
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #f652a0;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+/*Estilo del menú principal*/
+
+#menu-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/*Estilo del footer*/
+footer {
+    background-color: black;
+    padding: 10px 15px;
+    margin: 15px;
+}
+
+#resources-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Apartado de newsletter del footer*/
+#newsletter-container {
+    margin-left: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#elem1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#elem1 img {
+    margin-right: 250px;
+}
+
+/*Input de la newsletter para el correo*/
+#email-newsletter {
+    margin: 15px;
+    padding: 5px 25px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*Apartado de redes sociales del footer*/
+#follow-us-container img {
+    margin-right: 15px;
+}
+
+#follow-us-container img:hover {
+    scale: 1.3;
+}
+
+/*Apartado Sobre Nosotros del footer*/
+
+#about-us-footer-container {}
+
+/*Apartado de Ayuda del Footer*/
+
+#help-container {}
+
+/*Declaración de fuentes de texto externas*/
+@font-face {
+    font-family: 'Neoneon';
+    src: url('../assets/fonts/Neoneon/NeoNeon.otf');
+}
+
+.lato-thin {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: italic;
+}

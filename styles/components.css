@@ -1,0 +1,22 @@
+/*Estilos específicos de componentes como botones, tarjetas, etc*/
+
+button {
+    background-color: #f652a0;
+    color: #FFFFFF;
+    padding: 0 25px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 25px;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    width: 200px;
+}
+
+/*Estilos de las tarjetas de anime*/
+
