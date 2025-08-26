@@ -1,23 +1,22 @@
-# 🎌 Anime Fandom Website (Akiba Nation)
+# 🎌 Sitio web para fans del anime (Akiba Nation)
 
-This is a static website project called **Akiba Nation**, created as part of a personal practice.  
-The website is focused on anime, manga, and otaku culture, featuring product showcases and a fan-oriented design.
-
----
-
-## 🚀 Features
-- Static HTML, CSS and JavaScript  
-- Anime-inspired design and layout  
-- Product-style sections for fandom items  
+Este es un proyecto de sitio web estático llamado **Akiba Nation**, creado como parte de una práctica personal.  
+El sitio web se centra en el anime, el manga y la cultura otaku, y presenta vitrinas de productos y un diseño orientado a los fans.
 
 ---
 
-## 🌐 Deployment
-The project is deployed using **GitHub Pages** and can be visited at:  
-👉 [Anime Fandom Website](https://albamdls.github.io/anime-fandom-website/)
+## 🚀 Características
+- HTML estático, CSS y JavaScript  
+- Diseño y maquetación inspirados en el anime  
+- Secciones de estilo de producto para artículos de fandom
+
+---
+
+## 🌐 Despliegue
+El proyecto se ha desplegado utilizando **GitHub Pages** y se puede visitar en:  👉 [Anime Fandom Website](https://albamdls.github.io/anime-fandom-website/)
 
 ![screenshot](./assets/screenshots/captura_pantalla_akiba_nation.png)
 
 ---
 
-✍️ Author: [@albamdls](https://github.com/albamdls)
+✍️ Autor: [@albamdls](https://github.com/albamdls)
